@@ -135,6 +135,7 @@ input[type="range"]
    a 
       color: #969696
       font-size: 15px
+      font-family: 'Open Sans', sans-serif
       font-style: normal
       font-weight: 300
       line-height: 25px
@@ -790,7 +791,7 @@ picture
          height: 1px
          background: #2E2E2E
          position: absolute
-         top: 49px
+         top: 45px
          left: 107px
    &__socials 
       margin-top: 14px
@@ -817,6 +818,7 @@ picture
       color: #FFF
       font-size: 18px
       font-style: normal
+      font-family: 'Inter', sans-serif
       font-weight: 700
       line-height: 24px
       margin-bottom: 37px
@@ -1100,7 +1102,8 @@ input[type="search"]::-webkit-search-results-decoration
    &__btn 
       width: 185px
       height: 50px
-      color: $black
+      color: black
+      border: 1px solid #000
       font-family: 'Inter', sans-serif
       background: transparent
       .svg 
@@ -1226,14 +1229,15 @@ input[type="search"]::-webkit-search-results-decoration
    position: absolute
    top: 0
    left: 0
-   width: 100%
+   width: 140%
    height: 100%
-   object-fit: cover 
+   // object-fit: cover 
    z-index: -1
 .page 
    h1 
       font-weight: 600
       margin-bottom: 20px
+      font-size: 45px
 .dealer
    &__box 
       align-items: flex-start
@@ -1290,6 +1294,8 @@ input[type="search"]::-webkit-search-results-decoration
       margin-top: 40px
       width: 100%
       height: 56px
+      background: #0A0B0D
+      color: #F8F9FA
       transition: 0.5s
    .selectCF
       margin-left: 0
@@ -1382,13 +1388,13 @@ input[type="search"]::-webkit-search-results-decoration
       position: relative
       top: -3px
       li 
-         color: #212121
+         color: black
          font-size: 16px
          font-style: normal
          font-weight: 600
          margin-right: 40px
          a 
-            color: #212121
+            color: black
             font-size: 16px
             font-style: normal
             font-weight: 600
@@ -1396,6 +1402,8 @@ input[type="search"]::-webkit-search-results-decoration
          &:last-child
             margin-right: 0
    &-item 
+      h1 
+         font-size: 48px
       &__pic 
          width: 100%
          object-fit: cover
@@ -1405,7 +1413,7 @@ input[type="search"]::-webkit-search-results-decoration
          width: 100%
          object-fit: cover
       &__content 
-         padding-left: 28px
+         padding-left: 33px
          margin-bottom: 60px
          border-left: 3px solid #000
          p 
@@ -1426,7 +1434,7 @@ input[type="search"]::-webkit-search-results-decoration
          &:hover 
             transform: rotate(6deg)
       &__top 
-         margin: 50px 0
+         margin: 79px 0 50px
          align-items: flex-start
          .news-item__content
             width: 100%
@@ -1434,7 +1442,9 @@ input[type="search"]::-webkit-search-results-decoration
          .news-item__link
             margin-left: auto
             margin-right: 0
-            margin-top: 80px
+            margin-top: 121px
+            position: relative
+            right: -31px
          &_2 
             justify-content: space-between
             .news-item__img
@@ -1446,6 +1456,10 @@ input[type="search"]::-webkit-search-results-decoration
          margin-right: 116px
          object-fit: cover
 .use 
+   padding-bottom: 70px
+   &__new 
+      padding-top: 60px
+      background: #FBFBFB
    &__box 
       margin-top: 60px
       justify-content: space-between
@@ -1466,6 +1480,7 @@ input[type="search"]::-webkit-search-results-decoration
       font-weight: 600
       line-height: 30px
    &__btn 
+      background: white
       width: 185px
       height: 50px
       .svg 
@@ -1473,7 +1488,7 @@ input[type="search"]::-webkit-search-results-decoration
          path 
             fill: black
    &__row 
-      margin-top: 360px
+      padding-top: 324px
       align-items: center
       position: relative
       justify-content: flex-end
@@ -1491,7 +1506,7 @@ input[type="search"]::-webkit-search-results-decoration
    &__img 
       &_1 
          position: absolute
-         top: -168px
+         top: 165px
          left: 112px
       &_3 
          margin-left: 80px
@@ -1549,6 +1564,7 @@ input[type="search"]::-webkit-search-results-decoration
          transition: 0.5s
          width: 228.851px
          height: 57.747px
+         font-size: 16px
          margin-left: auto
    &__flex 
       flex-wrap: wrap
@@ -1589,6 +1605,8 @@ input[type="search"]::-webkit-search-results-decoration
          &:focus 
             border: none !important
             border-bottom: 1px solid black !important
+      .grey 
+         color: #8D8D8D
    &__area 
       color: #000
       font-size: 14px
@@ -1673,8 +1691,6 @@ input[type="search"]::-webkit-search-results-decoration
       font-weight: 400
       line-height: 30px
       text-transform: uppercase
-   .lines
-      width: auto
    &-item 
       &__box 
          justify-content: space-between
@@ -1727,6 +1743,7 @@ input[type="search"]::-webkit-search-results-decoration
                top: 10px
       &__bottom 
          h2 
+            font-size: 35px
             margin-bottom: 48px
          .rem__box
             margin-top: 0
@@ -1751,6 +1768,7 @@ table
       box-sizing: border-box
       height: 83px
       text-align: center
+      text-transform: uppercase
       padding: 4px 30px
       color: #000
       background: #FFF
@@ -1787,7 +1805,10 @@ table
                background: #FAFAFA
 .catalog-item 
    h2 
+      font-size: 48px
       margin-bottom: 0 !important
+   .h2 
+      font-weight: 700
    &__table 
       width: 100%
    &__row 
@@ -1858,6 +1879,7 @@ table
             path 
                fill: white
    &__box 
+      margin-bottom: -20px
       p 
          font-size: 16px
          font-weight: 400
@@ -1928,6 +1950,7 @@ table
          position: relative
          margin: 90px 0 110px
          h2 
+            font-size: 35px
             margin-bottom: 0
          .swiper-button-next1
             left: inherit 
@@ -2036,10 +2059,13 @@ table
             &:after 
                right: 11px
    &__bottom 
+      margin-bottom: -20px
       .catalog-item__block
          p 
             margin-bottom: 17px
-         img 
+            font-size: 20px
+            font-weight: 400
+         img   
             margin-bottom: 20px
       .corn__row 
          margin: 0 !important
@@ -2206,8 +2232,10 @@ table
          line-height: 58px
          margin-bottom: 40px
          text-transform: uppercase
+   .container_big 
+      max-width: 1430px
    &__map 
-      width: 1264px
+      width: 1400px
    &__scroll
       overflow-x: auto 
       width: 100%
@@ -2309,11 +2337,11 @@ table
          top: 49%
          left: 15%
       &.it6 
-         top: 81%
+         top: 82%
          left: 12.4%
       &.it7 
-         top: 84%
-         left: 14.4%
+         top: 85%
+         left: 14.7%
       &.it8 
          top: 59%
          left: 23%
@@ -2322,10 +2350,10 @@ table
          left: 25%
       &.it10
          top: 50%
-         left: 28.4%
+         left: 29.4%
       &.it11 
-         top: 83%
-         left: 26.4%
+         top: 84%
+         left: 26.8%
       &.it12 
          top: 73%
          left: 29.5%
@@ -2337,31 +2365,31 @@ table
          left: 41.4%
       &.it15 
          top: 60%
-         left: 50.4%
+         left: 50.8%
       &.it16 
          top: 62%
-         left: 57.4%
+         left: 58.4%
       &.it17
          top: 61%
-         left: 63%
+         left: 64%
       &.it18
          top: 52%
-         left: 74.4%
+         left: 75.4%
       &.it19
          top: 48%
-         left: 87.4%
+         left: 88.4%
       &.it20
          top: 27%
          left: 43.4%
       &.it21
-         left: 52%
-         top: 32%
+         left: 52.5%
+         top: 31.5%
       &.it22
          top: 37%
-         left: 78.4%
+         left: 79.4%
       &.it23
          top: 44%
-         left: 71.4%
+         left: 72.4%
 /*POPUP*/
 .box-modal__close 
    z-index: 10
@@ -2399,7 +2427,7 @@ table
    margin-left: -316px
    height: auto 
    overflow: hidden
-   padding: 50px
+   padding: 41.5px 50px
    text-align: center
    width: 632px
    background: #FFF
@@ -2441,3 +2469,8 @@ table
       justify-content: space-between
       img 
          width: 30.5%
+.rem-item__box_2
+   margin-top: -18px
+.news-item__link_2
+   position: relative
+   top: -50px
