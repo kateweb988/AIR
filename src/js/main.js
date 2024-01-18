@@ -1264,6 +1264,18 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
   });
+  const swiper66 = new Swiper('.swiper66', {
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 0,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination66",
+    },
+  });
 });
 document.addEventListener("DOMContentLoaded", () => {
   $('.item__see').click(function (event) {

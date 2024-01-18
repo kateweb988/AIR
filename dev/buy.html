@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="date=no">
+	<meta name="format-detection" content="address=no">
+	<meta name="format-detection" content="email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+	<title>AIR MOTOR</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	<meta property="og:locale" content="ru-Ru">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+
+<body>
+	<div class="body-wrap page">
+		<header class="header" id="header">
+			<nav class="nav">
+				<div class="container">
+					<div class="nav__top q">
+						<div class="nav__left">
+							<div class="menu-btn">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+							<div class="menu">
+								<a href="#" class="nav__enter btn">
+									<img src="img/per.svg" alt="" class="svg">
+									Войти
+								</a>
+								<ul class="menu__list">
+									<li>
+										<a href="#">
+											Каталог
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Где купить
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Стать дилером
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Новости
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											О нас
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Контакты
+										</a>
+									</li>
+								</ul>
+								<div class="nav__content">
+									<a href="tel:+74951234567" class="nav__tel">
+										+7 (495) 123-45-67
+									</a>
+									<a href="mailto:info@ev-kicks.ru" class="nav__mail">
+										info@ev-kicks.ru
+									</a>
+								</div>
+							</div>
+							<a href="main.html" class="nav__logo">
+								<img src="img/logo.svg" alt="">
+							</a>
+						</div>
+						<div class="nav__right q">
+							<ul class="nav__list q">
+								<li>
+									<a href="#">
+										Каталог
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Где купить
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Стать дилером
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Новости
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										О нас
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Контакты
+									</a>
+								</li>
+							</ul>
+							<div class="menu-btn2">
+								<img src="img/search.svg" alt="" class="svg">
+							</div>
+							<div class="menu2">
+								<h2>
+									Поиск
+								</h2>
+								<form action="#" class="mobile__form">
+									<input type="text" name="search" placeholder="поиск">
+									<button type="submit">
+										<img src="img/search.svg" alt="" class="svg">
+									</button>
+								</form>
+							</div>
+							<a href="#" class="nav__enter btn">
+								<img src="img/per.svg" alt="" class="svg">
+								Войти
+							</a>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<section class="item sec buy" id="buy">
+			<div class="container">
+				<div class="bread q">
+					<a href="main.html">
+						Главная
+					</a>
+					<a href="buy.html">
+						Где купить
+					</a>
+				</div>
+				<h1>
+					ГДЕ КУПИТЬ
+				</h1>
+				<p class="buy__sub">
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry
+				</p>
+				<div id="map"></div>
+			</div>
+		</section>
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer__box d-flex">
+					<div class="footer__left">
+						<a href="main.html" class="footer__logo">
+							<img src="img/footer-logo.png" alt="">
+						</a>
+						<p class="footer__text">
+							Компания «Эйр Мотор» продолжает свое
+							движение по созданию инновационных
+							продуктов для Российского рынка.
+						</p>
+					</div>
+					<div class="footer__content d-flex">
+						<div class="footer__uls d-flex">
+							<div class="footer__item">
+								<p class="footer__title">
+									Бренды
+								</p>
+								<ul class="footer__list">
+									<li>
+										<a href="#">
+											Air Motor
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											hameleon
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Мастер
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="footer__item">
+								<p class="footer__title">
+									Продукты
+								</p>
+								<ul class="footer__list">
+									<li>
+										<a href="#">
+											Электрокарнизы
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Зимний сад
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Управление
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Рулонные шторы
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Римские шторы
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Шторы день - Ночь
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="footer__item">
+								<p class="footer__title">
+									Клиентам
+								</p>
+								<ul class="footer__list">
+									<li>
+										<a href="#">
+											О нас
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Стать дилером
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Где купить
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Новости
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Контакты
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="footer__right d-flex">
+							<div class="footer__info">
+								<p class="footer__title">
+									Контакты
+								</p>
+								<div class="footer__el q">
+									<img src="img/a1.svg" alt="">
+									<a href="tel:+74951234567">
+										+7 (495) 123-45-67
+									</a>
+								</div>
+								<div class="footer__el q">
+									<img src="img/a2.svg" alt="">
+									<a href="mailto:info@air-motor.ru">
+										info@air-motor.ru
+									</a>
+								</div>
+								<div class="footer__socials q">
+									<a href="#" class="footer__link" target="blank">
+										<img src="img/f1.svg" alt="" class="svg">
+									</a>
+									<a href="#" class="footer__link" target="blank">
+										<img src="img/f2.svg" alt="" class="svg">
+									</a>
+									<a href="#" class="footer__link" target="blank">
+										<img src="img/f3.svg" alt="" class="svg">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom d-flex">
+					<p class="footer__policy">
+						© «Эйр Мотор» 2023. <br class="mob"> <a href="#" target="blank"> Политика конфиденциальности</a>.
+					</p>
+					<a href="#" class="footer__com" target="blank">
+						<p>
+							Разработка сайта
+						</p>
+						<img src="img/com.png" alt="">
+					</a>
+				</div>
+			</div>
+		</footer>
+		<div class="popup__bg" id="popup">
+			<div class="popup">
+				<img src="img/close5.svg" alt="" class="close-popup">
+				<div class="popup__wrap">
+					<p class="popup__title">
+						Обратный звонок
+					</p>
+					<p class="popup__text">
+						Оставьте Ваши данные и мы свяжемся <br>
+						с Вами в ближайшее время
+					</p>
+					<form action="#" class="call__form">
+						<div class="call__item">
+							<label>
+								Имя
+							</label>
+							<input type="text" placeholder="Введите Ваше имя">
+						</div>
+						<div class="call__item">
+							<label>
+								Телефон
+							</label>
+							<input type="tel" placeholder="+7 (___) ___ - __ - __" class="tel">
+						</div>
+						<div class="call__item">
+							<label>
+								Как лучше с Вами связаться
+							</label>
+							<select class="select">
+								<option value="1">Прямой звонок</option>
+								<option value="2">whatsapp</option>
+								<option value="3">telega</option>
+							</select>
+						</div>
+						<button class="call__btn btn">
+							Отправить заявку
+						</button>
+						<p class="call__info">
+							Нажимая на кнопку «Отправить» Вы подтверждаете, <br class="mob"> что ознакомились <br>
+							с <a href="#"> Политикой конфиденциальности</a> <br class="mob"> и согласны на обработку <br>
+							персональных данных
+						</p>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js?ver=5.1"></script>
+		<script src="js/all.js"></script>
+		<script type="text/javascript">
+			ymaps.ready(init);
+
+			function init() {
+				var myMap = new ymaps.Map("map", {
+					center: [55.773105, 37.736779],
+					zoom: 9,
+					controls: []
+				});
+
+				var myGeoObjects = [];
+
+				// Метка 1
+				myGeoObjects[0] = new ymaps.Placemark([55.773105, 37.736779], {
+					balloonContentBody: '<b>Название дилера <br></b>' +
+						'<p class="txt">Адрес: Москва, ул. Название улицы 10, офис 11 <br></p>' +
+						'<p class="txt3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br></p>' +
+						'<p class="txt4">Представленные бренды <br></p>' +
+						'<img class="ic" src="img/1.png" alt=""> <img class="ic" src="img/2.png" alt="">   <img class="ic" src="img/3.png" alt=""> '
+
+				}, {
+					iconLayout: 'default#image',
+					iconImageHref: 'img/icon.svg',
+					iconImageSize: [30, 36],
+					iconImageOffset: [-35, -35]
+				});
+
+				// Метка 2
+				myGeoObjects[1] = new ymaps.Placemark([55.799947, 37.799068], {
+					balloonContentBody: '<b>Название дилера <br></b>' +
+						'<p class="txt">Адрес: Москва, ул. Название улицы 10, офис 11 <br></p>' +
+						'<p class="txt3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br></p>' +
+						'<p class="txt4">Представленные бренды <br></p>' +
+						'<img class="ic" src="img/1.png" alt=""> <img class="ic" src="img/2.png" alt="">   <img class="ic" src="img/3.png" alt=""> '
+
+				}, {
+					iconLayout: 'default#image',
+					iconImageHref: 'img/icon.svg',
+					iconImageSize: [30, 36],
+					iconImageOffset: [-35, -35]
+				});
+				// Метка 3
+				myGeoObjects[2] = new ymaps.Placemark([55.657484, 37.731335], {
+					balloonContentBody: '<b>Название дилера <br></b>' +
+						'<p class="txt">Адрес: Москва, ул. Название улицы 10, офис 11 <br></p>' +
+						'<p class="txt3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br></p>' +
+						'<p class="txt4">Представленные бренды <br></p>' +
+						'<img class="ic" src="img/1.png" alt=""> <img class="ic" src="img/2.png" alt="">   <img class="ic" src="img/3.png" alt=""> '
+
+				}, {
+					iconLayout: 'default#image',
+					iconImageHref: 'img/icon.svg',
+					iconImageSize: [30, 36],
+					iconImageOffset: [-35, -35]
+				});
+				var clusterer = new ymaps.Clusterer({
+					clusterDisableClickZoom: false,
+					clusterOpenBalloonOnClick: false,
+				});
+
+				clusterer.add(myGeoObjects);
+				myMap.geoObjects.add(clusterer);
+				myMap.behaviors.disable('scrollZoom');
+
+			}
+		</script>
+		<style>
+			b {
+				color: #000;
+				margin-bottom: 19px;
+				font-size: 22px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				font-family: 'Open Sans', sans-serif;
+				text-transform: uppercase;
+				display: block;
+			}
+
+			b::before {
+				content: "";
+				display: block;
+				background: url(img/new-arr.png) no-repeat center center;
+				position: absolute;
+				top: 0;
+				left: -15px;
+				width: 10px;
+				height: 10px;
+			}
+
+			.txt {
+				color: #343434;
+				font-size: 15px;
+				font-style: normal;
+				font-weight: 600;
+				font-family: 'Open Sans', sans-serif;
+				margin-bottom: 9px;
+				line-height: 25px;
+			}
+
+			.link {
+				color: #9f9f9f;
+				font-size: 13px;
+				margin-left: 11px;
+			}
+
+			.ic {
+				position: relative;
+				top: 0px;
+				margin-right: 20px;
+			}
+
+			.link2 {
+				color: #262728;
+				font-size: 17px;
+				font-weight: 500;
+				margin-top: 28px;
+				display: block;
+				margin-left: 0px;
+			}
+
+			.txt3 {
+				color: #343434;
+				font-size: 15px;
+				font-style: normal;
+				font-family: 'Open Sans', sans-serif;
+				margin-bottom: 32px;
+				font-weight: 400;
+				line-height: 25px;
+				width: 100%;
+				max-width: 482px;
+			}
+
+			.txt4 {
+				color: #343434;
+				font-size: 16px;
+				font-family: 'Open Sans', sans-serif;
+				font-style: normal;
+				font-weight: 600;
+				margin-bottom: 18px;
+				line-height: 25px;
+			}
+		</style>
+</body>
+
+</html>

@@ -230,6 +230,33 @@
       display: none
    .use__new
       padding-top: 40px
+   .news-item_1__flex
+      flex-direction: column-reverse
+   .news-item_2__flex
+      flex-direction: column
+   .news-item_1 .news-item__pic2, .news-item_1 .news-item_2__flex .news-item__pic2
+      width: 100%
+      height: auto
+      margin-bottom: 30px
+   .news-item_1 .news-item__content, .news-item_1 .news-item_2__flex .news-item__content
+      max-width: 100%
+   .news-item_1 .news-item__content p
+      margin-bottom: 15px
+   .news-item_2 .news-item__img
+      width: 100% !important
+      height: auto !important
+      margin-bottom: 20px !important
+      margin-right: 0
+      max-height: 400px
+   .news-item_2 .news-item__info
+      max-width: 100% !important
+   .news-item__top_2
+      flex-direction: column
+   .news-item_2 .news-item__top_2 .news-item__img
+      margin-bottom: 0 !important
+      margin-top: 20px
+   .news-item__top
+      margin-top: 30px
 @media ( max-width: 991px )
    input, textarea, select
       -webkit-appearance: none
@@ -448,16 +475,25 @@
       .mob 
          display: block
    .header__box
-      padding: 80px 0 120px
       margin-bottom: -100px
+      padding: 0
+      padding-top: 60px
+   .header__wrap
+      .swiper66 
+         padding: 0px 0 120px
+         position: relative
    .header__bg
       left: -82%
+      left: 0
       width: 183%
-      top: -113px
-      height: 127%
+      width: 100%
+      top: 0px
+      height: 350px
       opacity: 0.4
    .item h2
       margin-bottom: 25px
+   .swiper66 
+      overflow: visible
    .item__name
       font-size: 16px
       margin-bottom: 15px
@@ -531,6 +567,8 @@
    .use__item
       width: 100%
       margin-bottom: 60px
+      &:last-child
+         margin-bottom: 0
    .use__box
       flex-direction: column
       margin-top: 40px
@@ -541,6 +579,8 @@
       margin-top: 200px
       padding-top: 0
       justify-content: center
+   .use__new
+      margin-top: 72px
    .use__img_1
       top: -159px
    .use__row p
@@ -600,7 +640,7 @@
       height: 60px
       font-size: 14px
    table thead td
-      height: 50px
+      height: 76px
    .catalog-item__block img
       margin-bottom: 15px
    .curtains-item__slider .slider, .curtains-item__slider .slider2
@@ -744,7 +784,6 @@
       display: none
    .nav 
       background: white 
-      position: relative
       z-index: 50
    .catalog-item h2, .curtains-item__wrap h2, .rem-item__bottom h2
       font-size: 27px
@@ -757,3 +796,24 @@
    .main
       padding-bottom: 50px
       overflow: hidden
+   .header__wrap, .sec
+      margin-top: 74px
+   .news-item_1__flex
+      margin: 30px 0 40px
+   .news-item_1 .news-item__content p
+      font-size: 15px
+      margin-bottom: 10px
+   .news-item_1 .news-item__link
+      margin-top: 40px
+   .news-item_1 .news-item__pic2, .news-item_1 .news-item_2__flex .news-item__pic2
+      margin-bottom: 20px
+   .news-item_2 .news-item__info
+      margin: 20px 0
+   .news-item__pic2
+      height: auto
+   .news-item_3 .news-item__content_3
+      margin: 20px 0 40px
+   .swiper66 .swiper-slide_3 .header__box
+      margin-left: 0
+   .item-main
+      padding-top: 0

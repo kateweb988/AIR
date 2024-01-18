@@ -11,21 +11,21 @@
       transform: rotate(90deg)
       fill: $black
 input::-webkit-input-placeholder 
-   color: #6B7888 !important
+   color: transparent !important
 input::-moz-placeholder
-   color: #6B7888 !important
+   color: transparent !important
 input:-ms-input-placeholder 
-   color: #6B7888 !important
+   color: transparent !important
 input:-moz-placeholder 
-   color: #6B7888 !important
+   color: transparent !important
 textarea::-webkit-input-placeholder 
-   color: #6B7888 !important
+   color: transparent !important
 textarea::-moz-placeholder
-   color: #6B7888 !important
+   color: transparent !important
 textarea:-ms-input-placeholder 
-   color: #6B7888 !important
+   color: transparent !important
 textarea:-moz-placeholder 
-   color: #6B7888 !important
+   color: transparent !important
 .range_container 
    display: flex
    flex-direction: column
@@ -130,7 +130,7 @@ input[type="range"]
    display: flex
    align-items: center
    justify-content: flex-start
-   margin-bottom: 75px
+   margin-bottom: 40px
    flex-wrap: wrap
    a 
       color: #969696
@@ -256,7 +256,7 @@ input[type="range"]
    -webkit-font-smoothing: antialiased
    -webkit-backface-visibility: hidden
    color: #FFFFFF
-.swiper-pagination2, .swiper-pagination3, .swiper-pagination4
+.swiper-pagination2, .swiper-pagination3, .swiper-pagination4,  .swiper-pagination66
    display: flex
    justify-content: center
    bottom: 19px
@@ -271,7 +271,7 @@ input[type="range"]
 .swiper-pagination-bullet-active
    background-color: $black !important
    opacity: 1
-.mob 
+.mob,  .swiper-pagination66 
    display: none
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button 
@@ -776,6 +776,21 @@ picture
          transform: translateX(-56%) translateY(-31%)
 // [class*="ymaps-"][class*="-ground-pane"] 
 //    filter: grayscale(100) !important
+.lst 
+   position: relative
+   .pos
+      position: absolute
+      top: 9px
+      left: 50%
+      transform: rotate(90deg)
+      margin-left: -8.5px
+   .pos2
+      position: absolute
+      bottom: 0
+      left: 50%
+      margin-left: -8.5px
+      bottom: 9px
+      transform: rotate(90deg)
 .footer 
    padding: 80px 0 65px
    background: $black
@@ -1015,11 +1030,15 @@ input[type="search"]::-webkit-search-results-decoration
             fill: $black
 .nav 
    padding: 26px 0 27px
+   position: fixed
+   z-index: 5
+   width: 100%
+   background: white
    &__logo 
       display: block
       flex: 1 0 auto 
-      width: 198px
-      max-width: 198px
+      width: 220px
+      max-width: 220px
       img 
          width: 100%
          height: 100%
@@ -1045,6 +1064,7 @@ input[type="search"]::-webkit-search-results-decoration
             font-style: normal
             font-weight: 300
             line-height: normal
+            text-transform: uppercase
          &:hover
             a 
                opacity: 0.5
@@ -1057,6 +1077,7 @@ input[type="search"]::-webkit-search-results-decoration
 .header 
    &__wrap 
       position: relative
+      margin-top: 94px
    &__bg 
       position: absolute
       top: 0
@@ -1077,11 +1098,13 @@ input[type="search"]::-webkit-search-results-decoration
       width: 185px
       height: 50px
       padding: 0 25px
+.sec 
+   margin-top: 100px
 .item 
-   padding: 105px 0 57px
+   padding: 65px 0 57px
    position: relative
    h2 
-      margin-bottom: 76px
+      margin-bottom: 40px
    &__box 
       justify-content: space-between
       flex-wrap: wrap
@@ -1126,7 +1149,7 @@ input[type="search"]::-webkit-search-results-decoration
       text-transform: uppercase
 .info
    padding: 106px 0 50px 
-   background: url(/img/bg2.png) no-repeat center center / cover 
+   background: $black 
    &__box 
       justify-content: space-between
       align-items: flex-start
@@ -1289,7 +1312,7 @@ input[type="search"]::-webkit-search-results-decoration
    &__flex 
       justify-content: space-between
       .dealer__el
-         width: 48%
+         width: 100%
    &__btn 
       margin-top: 40px
       width: 100%
@@ -1458,23 +1481,27 @@ input[type="search"]::-webkit-search-results-decoration
 .use 
    padding-bottom: 70px
    &__new 
-      padding-top: 60px
+      padding: 60px 0 30px
+      margin-top: 127px
       background: #FBFBFB
    &__box 
       margin-top: 60px
       justify-content: space-between
+   &__pic 
+      height: 100%
    &__block 
       border: 1px solid #D6D6D6
-      height: 478px
+      height: 355px
+      padding-top: 25px
       background: #FFF
       display: flex
       align-items: flex-end
-      margin-bottom: 24px
+      margin-bottom: 20px
       justify-content: center
    &__item 
       width: 48.3%
    &__name 
-      margin-bottom: 22px
+      margin-bottom: 15px
       font-size: 20px
       font-style: normal
       font-weight: 600
@@ -1488,7 +1515,7 @@ input[type="search"]::-webkit-search-results-decoration
          path 
             fill: black
    &__row 
-      padding-top: 324px
+      padding-top: 227px
       align-items: center
       position: relative
       justify-content: flex-end
@@ -1506,8 +1533,8 @@ input[type="search"]::-webkit-search-results-decoration
    &__img 
       &_1 
          position: absolute
-         top: 165px
-         left: 112px
+         top: 49px
+         left: 100px
       &_3 
          margin-left: 80px
          position: relative
@@ -1535,7 +1562,7 @@ input[type="search"]::-webkit-search-results-decoration
       font-style: normal
       font-weight: 600
       line-height: 35px 
-      margin-bottom: 10px
+      margin-bottom: 40px
    &__sub 
       color: #FFF
       font-size: 14px
@@ -1605,8 +1632,6 @@ input[type="search"]::-webkit-search-results-decoration
          &:focus 
             border: none !important
             border-bottom: 1px solid black !important
-      .grey 
-         color: #8D8D8D
    &__area 
       color: #000
       font-size: 14px
@@ -1743,7 +1768,6 @@ input[type="search"]::-webkit-search-results-decoration
                top: 10px
       &__bottom 
          h2 
-            font-size: 35px
             margin-bottom: 48px
          .rem__box
             margin-top: 0
@@ -1758,7 +1782,7 @@ table
    border-collapse: separate
    width: 100%
    border-spacing: 0
-   margin-top: 60px
+   margin-top: 35px
    margin-bottom: 0px
    .incdec
       width: 133.231px
@@ -1766,12 +1790,12 @@ table
       margin: 0 auto !important
    td
       box-sizing: border-box
-      height: 83px
+      height: 65px
       text-align: center
       text-transform: uppercase
       padding: 4px 30px
       color: #000
-      background: #FFF
+      // background: #FFF
       font-size: 16px
       font-weight: 600
       line-height: normal
@@ -1798,14 +1822,16 @@ table
          height: 77px
          &:first-child
             padding-left: 49px
-   tbody
-      tr
-         &:nth-child(2n)
-            td
-               background: #FAFAFA
+   // tbody
+   //    tr
+   //       &:nth-child(2n)
+   //          td
+   //             background: #FAFAFA
+.pos 
+   position: relative
+   top: 1px
 .catalog-item 
    h2 
-      font-size: 48px
       margin-bottom: 0 !important
    .h2 
       font-weight: 700
@@ -1828,13 +1854,13 @@ table
       &:last-child
          border-right: 1px solid #D2D2D2
    &__btn 
-      margin: 55px auto 0
+      margin: 25px auto 0
       width: 185px
       height: 50px
       .svg 
          margin-left: 17px
    &__box 
-      margin-top: 100px
+      margin-top: 50px
       justify-content: flex-start
       flex-wrap: wrap
       margin-bottom: 40px
@@ -1844,7 +1870,7 @@ table
       margin-bottom: 62px
       margin-right: 62px
       img 
-         margin-bottom: 25px  
+         margin-bottom: 0px  
          width: 100%
       p 
          color: #000
@@ -1854,6 +1880,7 @@ table
          line-height: normal
          text-transform: uppercase
          transition: 0.5s 
+         margin-bottom: 10px
       &:hover 
          p 
             opacity: 0.6
@@ -2080,11 +2107,15 @@ table
          transform: rotate(63deg)
       .corn__block 
          img
+            max-width: 23px
             margin-bottom: 0 !important
       .corn__block_2 div:after
          right: -8px
       .corn__block_6 div:after
-         right: -4px
+         right: 3px
+      .corn__block_6
+         img 
+            max-width: 30px
 .buy 
    padding-bottom: 132px
    &__sub 
@@ -2474,3 +2505,86 @@ table
 .news-item__link_2
    position: relative
    top: -50px
+.use-main
+   padding-bottom: 0 !important
+.news-item_1
+   .news-item__pic2
+      width: 574.689px
+      height: 327.158px
+      margin-bottom: 0
+   &__flex 
+      align-items: flex-start
+      justify-content: space-between
+      margin: 52px 0 74px
+   .news-item_2__flex
+      justify-content: space-between
+      align-items: flex-start
+      .news-item__content
+         order: 2
+         max-width: 45%
+      .news-item__pic2
+         order: 1
+         width: 620px
+         height: 356.074px
+   .news-item__content p
+      font-size: 17px
+      line-height: 27px
+   .news-item__content
+      padding-left: 0
+      margin-bottom: 0
+      border-left: none
+      width: 100%
+      max-width: 48.282%
+   .news-item__link
+      margin-top: 90px
+.news-item_2
+   .news-item__content
+      padding-left: 0
+      margin-bottom: 0
+      border-left: none
+      width: 100%
+      max-width: 100%
+   .news-item__img
+      width: 530px
+      height: 494.84px
+      margin-right: 71px
+   .news-item__top .news-item__link
+      margin-top: 60px
+   .news-item__info
+      width: 100%
+      max-width: 53%
+   .news-item__pic
+      margin-bottom: 0
+   .news-item__top_2 
+      justify-content: space-between
+      .news-item__img
+         width: 529px
+         height: 522.368px
+         margin-right: 0
+      .news-item__info
+         max-width: 47%
+.news-item__pic2
+   height: 630px
+.news-item_3
+   .news-item__content_3
+      padding-left: 0
+      margin-bottom: 0
+      border-left: none
+      width: 100%
+      max-width: 100%
+      margin: 28px 0 70px
+.news-item_2 .news-item__top_2
+   .news-item__img
+      width: 530px
+      height: 501px
+.swiper66 
+   overflow: hidden 
+   .swiper-slide
+      &_2 
+         text-align: center
+         .header__btn 
+            margin: 0 auto
+      &_3 
+         .header__box
+            margin-left: auto
+            width: max-content
